@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>專案說明書（AGENTS.md / CLAUDE.md）｜AI 名詞小百科</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-page="entry" data-root="../" data-slug="agents-md">
+  <header id="site-header"></header>
+
+  <main class="wrap narrow">
+    <p class="crumb"><a href="../index.html">全部詞條</a> / 工具與實作</p>
+
+    <article class="entry">
+      <span class="tag" data-cat="工具與實作">工具與實作</span>
+      <h1>專案說明書</h1>
+      <p class="en">AGENTS.md / CLAUDE.md</p>
+
+      <section class="tldr">
+        <h2>一句話解釋</h2>
+        <p>寫給 AI 看的專案規則，讓它照你的方式工作。</p>
+      </section>
+
+      <section class="analogy">
+        <h2>白話比喻</h2>
+        <p>新同學加入專題小組時，你會給他一份「組內規則」：檔案放哪、命名怎麼取、報告用什麼格式。AGENTS.md / CLAUDE.md 就是寫給 AI 的這份規則，讓它每次都照同一套方式做事。</p>
+      </section>
+
+      <section class="points">
+        <h2>重點整理</h2>
+        <ul>
+          <li>放在專案根目錄，AI 工具開始工作前會先讀它。</li>
+          <li>內容通常包含：專案目的、資料夾結構、命名規則、寫作與程式風格。</li>
+          <li>AGENTS.md 是多種 AI 工具通用的慣例，CLAUDE.md 是 Claude Code 專用。</li>
+          <li>寫得越具體，AI 越能「接手」繼續做，不用每次重新交代。</li>
+        </ul>
+      </section>
+
+      <section class="example">
+        <h2>實際例子</h2>
+        <p>本網站就是用 AGENTS.md 維護的！只要對 AI 說「幫我新增一個詞條：Embedding」，它就會依照規則建立頁面、登記到 entries.js，並自動出現在首頁。</p>
+        <pre>ai-glossary/
+├── AGENTS.md      ← 規則寫在這裡
+├── CLAUDE.md      ← 指向 AGENTS.md
+├── data/entries.js
+└── entries/
+    └── embedding.html  ← AI 照規則新增</pre>
+      </section>
+
+      <section class="myth">
+        <h2>常見誤解</h2>
+        <p>很多人以為只要寫一句「請寫好一點」就夠了，其實 AI 需要的是具體、可檢查的規則，例如「檔名用小寫加連字號」、「每篇必須有 6 個區塊」。</p>
+      </section>
+
+      <div id="related"></div>
+      <nav id="pager"></nav>
+      <p class="meta" id="meta"></p>
+    </article>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="../data/entries.js"></script>
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>

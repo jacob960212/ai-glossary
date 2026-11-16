@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>詞元（Token）｜AI 名詞小百科</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-page="entry" data-root="../" data-slug="token">
+  <header id="site-header"></header>
+
+  <main class="wrap narrow">
+    <p class="crumb"><a href="../index.html">全部詞條</a> / 基礎概念</p>
+
+    <article class="entry">
+      <span class="tag" data-cat="基礎概念">基礎概念</span>
+      <h1>詞元</h1>
+      <p class="en">Token</p>
+
+      <section class="tldr">
+        <h2>一句話解釋</h2>
+        <p>AI 讀寫文字時的最小單位，也是計費單位。</p>
+      </section>
+
+      <section class="analogy">
+        <h2>白話比喻</h2>
+        <p>AI 讀文字不是一個字一個字讀，而是把句子切成一塊一塊的「積木」，每塊積木就是一個 Token。英文常常一個單字是一塊，中文則可能一個字就是一塊、甚至更多。</p>
+      </section>
+
+      <section class="points">
+        <h2>重點整理</h2>
+        <ul>
+          <li>Token 是模型處理文字的基本單位。</li>
+          <li>AI 服務常常用 Token 數量來計費。</li>
+          <li>輸入和輸出的文字都會算 Token。</li>
+          <li>上下文視窗的大小也是用 Token 來計算。</li>
+        </ul>
+      </section>
+
+      <section class="example">
+        <h2>實際例子</h2>
+        <p>「I love AI」大概會被切成「I」「 love」「 AI」三個 Token；同樣意思的中文「我愛 AI」切出來的數量可能不一樣，取決於模型用的切分方式。</p>
+        <pre>I love AI   → [I] [ love] [ AI]
+我愛 AI     → [我] [愛] [ AI]（實際切法依模型而定）</pre>
+      </section>
+
+      <section class="myth">
+        <h2>常見誤解</h2>
+        <p>很多人以為 1 個 Token 就等於 1 個字，其實不一定。不同語言、不同模型的切法都不同，只能說「大概」的對應關係。</p>
+      </section>
+
+      <div id="related"></div>
+      <nav id="pager"></nav>
+      <p class="meta" id="meta"></p>
+    </article>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="../data/entries.js"></script>
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>

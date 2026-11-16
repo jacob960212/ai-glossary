@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>檢索增強生成（Retrieval-Augmented Generation）｜AI 名詞小百科</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-page="entry" data-root="../" data-slug="rag">
+  <header id="site-header"></header>
+
+  <main class="wrap narrow">
+    <p class="crumb"><a href="../index.html">全部詞條</a> / 進階技術</p>
+
+    <article class="entry">
+      <span class="tag" data-cat="進階技術">進階技術</span>
+      <h1>檢索增強生成</h1>
+      <p class="en">Retrieval-Augmented Generation</p>
+
+      <section class="tldr">
+        <h2>一句話解釋</h2>
+        <p>先查資料、再讓 AI 根據資料回答。</p>
+      </section>
+
+      <section class="analogy">
+        <h2>白話比喻</h2>
+        <p>閉卷考試只能靠記憶，容易記錯；開書考試可以先翻課本再作答，答案就可靠多了。檢索增強生成（RAG）就是讓 AI 「開書考試」：先查相關資料，再根據資料回答。</p>
+      </section>
+
+      <section class="points">
+        <h2>重點整理</h2>
+        <ul>
+          <li>分成兩步：先「檢索」相關資料，再「生成」回答。</li>
+          <li>可以讓 AI 回答它沒學過的內容，例如公司內部文件。</li>
+          <li>能降低幻覺，因為回答有資料可以依據。</li>
+          <li>資料本身如果錯了，AI 還是會跟著錯。</li>
+        </ul>
+      </section>
+
+      <section class="example">
+        <h2>實際例子</h2>
+        <p>學校做了一個「校規問答機器人」。學生問「期中考可以補考嗎？」系統會先從校規文件中找出相關條文，再把條文交給 AI，讓它用白話回答並附上出處。</p>
+        <pre>學生提問 → 搜尋校規資料庫 → 找到第 12 條
+        → 把條文 + 問題交給 AI → 產生有根據的回答</pre>
+      </section>
+
+      <section class="myth">
+        <h2>常見誤解</h2>
+        <p>很多人以為用了 RAG 就不會出錯，其實如果查到的資料不對、或沒查到關鍵段落，AI 一樣可能給出錯誤答案。</p>
+      </section>
+
+      <div id="related"></div>
+      <nav id="pager"></nav>
+      <p class="meta" id="meta"></p>
+    </article>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="../data/entries.js"></script>
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>

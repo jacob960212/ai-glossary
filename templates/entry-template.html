@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+  詞條模板 — 使用方式見 AGENTS.md 第 4 節
+  1. 複製到 entries/<slug>.html
+  2. 替換所有 {{...}}
+  3. 到 data/entries.js 登記
+  相關詞條、上下篇、更新日期由 site.js 自動產生，不要手動填。
+-->
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{中文名稱}}（{{English Name}}）｜AI 名詞小百科</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-page="entry" data-root="../" data-slug="{{slug}}">
+  <header id="site-header"></header>
+
+  <main class="wrap narrow">
+    <p class="crumb"><a href="../index.html">全部詞條</a> / {{分類}}</p>
+
+    <article class="entry">
+      <span class="tag" data-cat="{{分類}}">{{分類}}</span>
+      <h1>{{中文名稱}}</h1>
+      <p class="en">{{English Name}}</p>
+
+      <section class="tldr">
+        <h2>一句話解釋</h2>
+        <p>{{與 entries.js 的 summary 相同，30 字內}}</p>
+      </section>
+
+      <section class="analogy">
+        <h2>白話比喻</h2>
+        <p>{{用生活中的例子比喻，2–4 句}}</p>
+      </section>
+
+      <section class="points">
+        <h2>重點整理</h2>
+        <ul>
+          <li>{{重點 1}}</li>
+          <li>{{重點 2}}</li>
+          <li>{{重點 3}}</li>
+        </ul>
+      </section>
+
+      <section class="example">
+        <h2>實際例子</h2>
+        <p>{{一個具體情境}}</p>
+        <pre>{{可放對話或程式，沒有就刪掉這個 pre}}</pre>
+      </section>
+
+      <section class="myth">
+        <h2>常見誤解</h2>
+        <p>{{很多人以為……其實……}}</p>
+      </section>
+
+      <div id="related"></div>
+      <nav id="pager"></nav>
+      <p class="meta" id="meta"></p>
+    </article>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="../data/entries.js"></script>
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>
